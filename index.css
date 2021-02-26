@@ -1,0 +1,441 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 3000px;
+}
+/* font family of all headings */
+.heading-large {
+    font-family: "Righteous", sans-serif !important;
+    font-size: 4rem;
+    color: #375A64 ;
+}
+
+a#design-heading, a#design-heading:hover, a#design-heading:visited {
+    text-decoration: none;
+    color: #375A64;
+}
+
+li {
+    list-style: none;
+}
+
+.landing-page {
+    position: relative;
+}
+
+.heading {
+    font-family: "Righteous", sans-serif !important;
+    font-size: 2rem;
+    }
+
+.navbar-custom {
+        position: fixed;
+        z-index: 10000;
+        width: 100%;
+    }
+.custom-navbar {
+    background-color: #31515a93;
+    height: 3.5rem;
+    border-bottom-left-radius: 2.5rem;
+}
+
+.custom-navbar  li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.custom-navbar a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#logo {
+    height: 3.5rem;
+}
+
+.navbar-links {
+    margin-top: 0.9rem;
+}
+/* extreme left hamburger button */
+.navbar-button {
+    background-color: #FF4F5B;
+    height: 3.5rem;
+    width: 5rem; 
+    padding-top: 1em;
+    position: relative;
+}
+/* hamburber nav button bars' style starts here */
+.bar {
+    background-color: #375A64;
+
+}
+
+.bar1 {
+    height: 0.3em;
+    width: 2em;
+    margin-bottom: 0.3rem;
+}
+
+.bar2 {
+    height: 0.3em;
+    width: 2.5em;
+    margin-bottom: 0.3rem;
+}
+
+.bar3 {
+    height: 0.3em;
+    width: 3em;
+}
+
+/* vertical green bar under nav bar */
+
+.navbar-decoration-vertical {
+    background-color: #889da3be;
+    height: 20rem;
+    width: 2.5rem;
+    float: right;
+    clear: right;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur( 1px);
+}
+
+/* green and red lines at bottom left */
+
+.landing-bottom-horizontal {
+    float: left;
+    position: absolute;
+    bottom: 0px;
+    left: 2.5rem;
+    height: 2.5rem;
+    width: 20rem;   
+    background-color: #889da3be;
+}
+
+.landing-bottom-red-horizontal {
+    float: left;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3.5rem;
+    width: 2.5rem;
+    background-color: #FF4F5B;
+}
+
+.landing-bottom-vertical {
+    float: left;
+    position: absolute;
+    bottom: 3.5rem;
+    left: 0px;
+    width: 2.5rem;
+    height: 10rem;
+    background: #375a64a9;
+}
+
+.landing-page {
+    background-color: #FFF;
+    background-image: url("images/main-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.center-button {
+    height: 5rem;
+    width: 18rem;
+    background: #ff4f5bd0;  
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    color: #375A64;
+    font-size: 3.6rem;
+    font-family: "Righteous", sans-serif;
+    line-height: 4.5rem;
+    cursor: pointer;
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    user-select: none;
+}
+
+.center-button:hover {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0.3rem 10px 0px rgba(0, 0, 0, 0.336);  
+    box-shadow: 0px 0.3rem 10px 0px rgba(0, 0, 0, 0.336);
+}
+
+/* Coding heading section 2 */
+
+.section-2 {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.coding-design {
+    background-color: #375A64;
+    height: 18rem;
+}
+
+.coding-design-body {
+    background-color: #375A64;
+    flex: 0 0 30%;
+    display: flex;
+}
+
+.coding-hover{
+    background-color: #375A64;
+    height: 18rem;
+    display: block;  
+}
+
+.coding-heading, .design-heading {
+    background-color: #FFF !important;
+    height: 18rem;
+    flex: 1 10 30%  ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+#coding-heading, #design-heading {
+    cursor: pointer ;
+}
+
+.coding-design-iframe {
+    height: 18rem;
+    flex: 0 0 100%;
+}
+/* section 2 in mobile phones */
+.coding-design-1 {
+    background-color: #fff;
+    display: flex;
+}
+
+.coding-design-coding {
+    height: 0rem;
+    display: none;
+}
+
+.coding-heading-1 {
+    background-color: #375A64;
+    color: #fff !important;
+    width: 9rem;
+}
+
+/* horizontal underline bars under coding and design */
+
+.horizontal-underline-bars {
+    position: absolute;  
+    height: 1rem;
+    width: 100%;
+}
+
+.horizontal-bar-1, .horizontal-bar-2 {
+    background-color: #FF4F5B;
+    position: absolute;
+    height: 0.4rem;
+    width: 18vmax;
+    top: 11rem;
+}
+
+.horizontal-bar-2 {
+    right: 0px;
+}
+
+/* section 2 end here */
+
+/* section 3 (projects) style stars here */
+
+.project {
+    height: 18rem;
+    background: #375A64;
+    display: grid;
+}
+
+.project-heading {
+    text-align: center;
+    background: #FFF;
+    height: 3rem;
+    width: 30%;
+    justify-self: center;
+
+}
+
+.project-s {
+    background-color: #ff4f5bd0;
+    height: 10rem;
+    width: 18rem;
+    border-bottom-left-radius: 3rem;
+}
+
+/*all  media queries starts here */
+
+@media screen and (max-width:1200px) {
+    .center-button {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        height: 4rem;
+        width: 15rem;
+        background: #ff4f5bd0;  
+        position: absolute;
+        top: 33%;
+        left: 43%;
+    }
+
+    .heading-large {
+        font-size: 3.5rem;
+    }
+
+
+}
+
+@media screen and (max-width:992px) {
+
+    .landing-page  {
+        background-image: url('images/main-md-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 65vh;
+    }
+
+
+    .center-button {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        height: 3rem;
+        width: 12rem;
+        background: #ff4f5bd0;  
+        position: absolute;
+        top: 40%;
+        left: 41%;
+    }
+
+    .heading-large {
+        font-size: 2.5rem;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .horizontal-bar-1, .horizontal-bar-2 {
+        width: 9rem;
+    }
+
+    .landing-bottom-horizontal {
+        width: 10rem;   
+    }
+
+    .coding-hover:hover {
+        background-color: #375A64;
+        height: 18rem;
+        display: block;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+
+    .landing-page  {
+        background-image: url('images/main-md-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .center-button {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        height: 3rem;
+        width: 12rem;
+        background: #ff4f5bd0;  
+        position: absolute;
+        top: 45%;
+        left: 41%;
+    }
+
+    .heading-large {
+        font-size: 2.5rem;
+    }
+
+     /* section 2 in mobile phones */
+
+    .coding-design-coding {
+        height: 18rem;
+        display: block;
+        }
+    
+        .section-2 {
+        display: none;
+        height: 0rem;
+        }
+
+        .horizontal-bar-1, .horizontal-bar-2 {
+            width: 8rem;
+        }
+    
+        .landing-bottom-horizontal {
+            width: 8rem;   
+        }
+
+}
+
+@media screen and (max-width:576px) {
+    
+    .landing-page  {
+        background-image: url('images/mobile-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .center-button {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        height: 3rem;
+        width: 10rem;
+        background: #ff4f5bd0;  
+        position: absolute;
+        top: 50%;
+        left: 30%;
+    }
+
+    .heading-large {
+        font-size: 1.5rem;
+    }
+
+    .heading {
+        font-size: 1.2rem;
+        line-height: 3rem;
+    }
+
+    .navbar {
+        height: 0px;
+    }
+
+    .landing-bottom-horizontal {
+        width: 5rem;   
+    }
+
+    /* section 2 in mobile phones */
+
+    .coding-design-coding {
+    height: 18rem;
+    display: block;
+    }
+
+    .section-2 {
+    display: none;
+    height: 0rem;
+    }
+
+    .horizontal-bar-1, .horizontal-bar-2 {
+        width: 8rem;
+    }
+
+    .project-heading {  
+        justify-self: center;
+    }
+
+}
