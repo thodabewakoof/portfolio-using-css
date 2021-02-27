@@ -4,45 +4,52 @@
         <title>Hemant Rai</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width initial-scale=1.0">
-        <link rel="preload" href="images/main-bg.png" type="image/png">
-        <link rel="preload" href="images/mobile-bg.png" type="image/png">
-        <link rel="preload" href="index.css" type="text/css">
+        <link rel="preload" href="images/main-bg.png"  as="image">
+        <link rel="preload" href="images/mobile-bg.png" as="image">
+        <link rel="preload" href="index.css" as="style">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="index.css" type="text/css">
     </head>
     <body>
-        <nav class="navbar-custom float-end p-0">
-            <div class="custom-navbar float-end" id="navbar-custom">
-                    <ul class="navbar-links">
-                        <li class="home-button">
-                        <a class="" href="#landing-page">Home</a>
-                        </li>
-                        <li class="about-button">
-                        <a class="about-link" href="#">About</a>
-                        </li>
-                        <li class="projects-button">
-                        <a class="project-link" href="#project">Projects</a>
-                        </li>
-                        <li class="hamburger-nav">
-                            <div class="bars-div">
-                                <a class="hamburger-link" href="#">
-                                    <div class="bar bar1"></div>
-                                    <div class="bar bar2"></div>
-                                    <div class="bar bar3"></div>
-                                </a>
-                            </div>    
-                        </li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
             </div>
-        </nav>
-        <div class="landing-page" id="landing-page">
-            <div>   
-            <a class="logo-class" href="#">
-                    <img id="logo" src="images/logo.png" alt="logo">
-                </a>
-            </div>
+          </nav>
+        <div class="landing-page" id="landing-page" g-0 p-0>
             <div class="navbar-decoration-vertical"></div>
         
             <div class="center-button text-center heading-large">Begin,</div>
@@ -50,7 +57,7 @@
             <div class="landing-bottom-red-horizontal"></div>
             <div class="landing-bottom-vertical"    ></div>
         </div>
-        <div class="section-2 coding-design container-fluid g-0">
+        <div class="section-2 coding-design g-0">
             <div class="horizontal-underline-bars">
                 <div class="horizontal-bar-1"></div>
                 <div class="horizontal-bar-2"></div>
@@ -65,35 +72,35 @@
                 <iframe  name="coding-design-iframe" id="coding-design-iframe" class="coding-design-iframe" scrolling="no"></iframe>
             </div>
             <div class="design-heading heading-large coding-design">
-                <a href="Components/iframe-design.html" id="design-heading" target="coding-design-iframe">Design</p>
+                <a href="Components/iframe-design.html" id="design-heading" target="coding-design-iframe">Design</a>
             </div>
         </div>
         <!-- section 2 in mobile phones -->
-        <div class="section-2-1 coding-design-1 container-fluid g-0">
-            <div class="coding-heading-1  heading-large coding-design-coding">
-                Coding
-            </div>
-            <div class="coding-design-body-1 coding-design-coding">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ipsam.
-            </div>
-        </div>
-        <div class="section-2-1 coding-design-1 container-fluid g-0">
-            <div class="coding-heading-1  heading-large coding-design-coding">
-                Design
-            </div>  
-            <div class="coding-design-body-1 coding-design-coding">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ipsam.
-            </div>
-        </div>
-        
-        <div class="container-fluid project g-0 section-3" id="project">
-            <div class="project-heading heading">Projects</div>
-            <div class="project-s-containercontainer-fluid mx-auto">
-                <div class="row">
-                    <div class="project-1 project-s col-4 mx-5"></div>
-                    <div class="project-2 project-s col-4 mx-5"></div>
-                    <div class="project-3 project-s col-4 mx-5"></div>
+        <div class=" g-0">
+            <div class="section-2-1 coding-design-1 container-fluid g-0">
+                <div class="coding-heading-1  heading-large coding-design-coding">
+                    Coding
                 </div>
+                <div class="coding-design-body-1 coding-design-coding">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ipsam.
+                </div>
+            </div>
+            <div class="section-2-1 coding-design-1  g-0">
+                <div class="coding-heading-1  heading-large coding-design-coding">
+                    Design
+                </div>  
+                <div class="coding-design-body-1 coding-design-coding">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ipsam.
+                </div>
+            </div>
+        </div>
+        <div class=" project g-0 section-3" id="project">
+            <div class="project-heading heading">Projects</div>
+            <div class="project-s-container">
+                    <div class="project-1 project-s mx-2"></div>
+                    <div class="project-2 project-s mx-2"></div>
+                    <div class="project-3 project-s mx-2"></div>
+            </div>
         </div>
     </body>
     <script src="js/bootstrap.min.js"></script>

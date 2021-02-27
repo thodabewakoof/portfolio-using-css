@@ -30,72 +30,10 @@ li {
     font-size: 2rem;
     }
 
-.navbar-custom {
-        position: fixed;
-        z-index: 10000;
-        width: 100%;
-    }
-.custom-navbar {
-    background-color: #31515a93;
-    height: 3.5rem;
-    border-bottom-left-radius: 2.5rem;
-}
-
-.custom-navbar  li {
-    list-style: none;
-    display: inline-block;
-    margin-left: 2rem;
-}
-
-.custom-navbar a {
-    color: #FFF;
-    text-decoration: none;
-}
-
-#logo {
-    height: 3.5rem;
-}
-
-.navbar-links {
-    margin-top: 0.9rem;
-}
-/* extreme left hamburger button */
-.navbar-button {
-    background-color: #FF4F5B;
-    height: 3.5rem;
-    width: 5rem; 
-    padding-top: 1em;
-    position: relative;
-}
-/* hamburber nav button bars' style starts here */
-.bar {
-    background-color: #375A64;
-
-}
-
-.bar1 {
-    height: 0.3em;
-    width: 2em;
-    margin-bottom: 0.3rem;
-}
-
-.bar2 {
-    height: 0.3em;
-    width: 2.5em;
-    margin-bottom: 0.3rem;
-}
-
-.bar3 {
-    height: 0.3em;
-    width: 3em;
-}
-
-/* vertical green bar under nav bar */
-
 .navbar-decoration-vertical {
     background-color: #889da3be;
     height: 20rem;
-    width: 2.5rem;
+    width: 3.5rem;
     float: right;
     clear: right;
     backdrop-filter: blur(1px);
@@ -199,7 +137,7 @@ li {
     user-select: none;
 }
 
-#coding-heading, #design-heading {
+#design-heading {
     cursor: pointer ;
 }
 
@@ -249,9 +187,10 @@ li {
 /* section 3 (projects) style stars here */
 
 .project {
-    height: 18rem;
+    height: fit-content;
     background: #375A64;
     display: grid;
+    padding-bottom: 2rem;
 }
 
 .project-heading {
@@ -266,8 +205,16 @@ li {
 .project-s {
     background-color: #ff4f5bd0;
     height: 10rem;
-    width: 18rem;
+    width: 25vw;
     border-bottom-left-radius: 3rem;
+}
+
+.project-s-container {
+    width: 100%;
+    display: flex;
+    flex-flow : row nowrap;
+    justify-content: space-around;
+    margin-top: 2rem;
 }
 
 /*all  media queries starts here */
@@ -410,9 +357,9 @@ li {
         line-height: 3rem;
     }
 
-    .navbar {
-        height: 0px;
-    }
+
+
+
 
     .landing-bottom-horizontal {
         width: 5rem;   
@@ -434,8 +381,18 @@ li {
         width: 8rem;
     }
 
-    .project-heading {  
-        justify-self: center;
+    .project-s-container {
+        width: 100%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
     }
 
+    .project-s {
+        background-color: #ff4f5bd0;
+        height: 10rem;
+        width: 50vw;
+        border-bottom-left-radius: 3rem;
+        margin-top: 2rem;
+    }
 }
