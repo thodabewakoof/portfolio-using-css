@@ -359,6 +359,11 @@ nav a {
             border-bottom-left-radius: 0px;
         }
 
+        .navbar-decoration-vertical {
+            display: none;
+            height: 0px;
+        }
+
         .logo {
             display: none;
         }
