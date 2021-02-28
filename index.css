@@ -21,14 +21,38 @@ li {
     list-style: none;
 }
 
-.landing-page {
-    position: relative;
-}
-
 .heading {
     font-family: "Righteous", sans-serif !important;
     font-size: 2rem;
     }
+
+nav.container-fluid {
+        position: fixed;
+        z-index: 10000;
+        padding-right: 0px;
+    }
+
+.nav-background {
+    display: inline;
+}
+
+nav ul {
+    float: right;
+    background: #375a6494;
+    height: 56px;
+    border-bottom-left-radius: 40px;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 2.5rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF;
+}
 
 .navbar-decoration-vertical {
     background-color: #889da3be;
@@ -36,6 +60,7 @@ li {
     width: 3.5rem;
     float: right;
     clear: right;
+    margin-top: 56px;
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur( 1px);
 }
@@ -78,6 +103,7 @@ li {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    position: relative;
 }
 
 .center-button {
@@ -98,9 +124,10 @@ li {
 }
 
 .center-button:hover {
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.336);
     -moz-box-shadow: 0px 0.3rem 10px 0px rgba(0, 0, 0, 0.336);  
     box-shadow: 0px 0.3rem 10px 0px rgba(0, 0, 0, 0.336);
+    border: 0.5px solid white;
 }
 
 /* Coding heading section 2 */
@@ -325,6 +352,15 @@ li {
     
         .landing-bottom-horizontal {
             width: 8rem;   
+        }
+
+        nav ul {
+            width: 100vw;
+            border-bottom-left-radius: 0px;
+        }
+
+        .logo {
+            display: none;
         }
 
 }
